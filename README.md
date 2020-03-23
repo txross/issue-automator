@@ -13,6 +13,7 @@ attribute2: row value,
 ```
 
 # Usage
+```
 python create_issues.py token csv_file repo_owner repo_name
 
 Provide the following arguments:
@@ -22,13 +23,13 @@ token       Github Personal Access Token used to authenticate with the github ap
 
 csv_file    relative path of a comma-delimited, utf-8 encoded csv containing the header
             id, title, [any number of fields for the issue body]
-            
+
 repo_owner  the name of the owner of repo_name
             e.g. txross
 
 repo_name   the name of the github repository to create issues in
             e.g. issue-automator
-
+```
 
 
 e.g.
