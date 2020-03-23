@@ -42,7 +42,7 @@ def get_issue_body(headers, row):
 def usage():
     return """
     Usage:
-    python create_issues.py token csv_file repo_name repo_owner
+    python create_issues.py token csv_file repo_owner repo_name
 
     Provide the following arguments:
         token       Github Personal Access Token used to authenticate with the github api
@@ -51,12 +51,14 @@ def usage():
 
         csv_file    relative path of a comma-delimited, utf-8 encoded csv containing the header
                     id, title, [any number of fields for the issue body]
-
+        
+        repo_owner  the name of the owner of repo_name
+                    e.g. txross
+        
         repo_name   the name of the github repository to create issues in
                     e.g. issue-automator
 
-        repo_owner  the name of the owner of repo_name
-                    e.g. txross
+        
     """
 
 def main():
@@ -68,8 +70,8 @@ def main():
 
     token = sys.argv[1]
     csv_file = sys.argv[2]
-    repo_name = sys.argv[3]
-    repo_owner = sys.argv[4]
+    repo_owner = sys.argv[3]    
+    repo_name = sys.argv[4]
 
     table = []
     headers = []

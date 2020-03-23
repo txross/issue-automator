@@ -1,3 +1,3 @@
-id,title,attribute,
-47,Create new thing,foo,
-48,Create new thing2,bar,
+id,title,Feature Request,Acceptance Criteria,
+1,Add ability to update existing issues from csv,Permit updates to issues that have already been created by the issue-automator,updates should be idempotent
+2,Use argparse for named arguments,use a library to enable named arguments,user does not have to order args precisely
